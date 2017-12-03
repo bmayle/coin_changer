@@ -1,7 +1,7 @@
 def change_maker(change)
 	change_hash = {}
 
-	if change <= 5 && change >= 0
+	if change < 5 && change > 0
 		change_hash ["penny"] = change
 
 	elsif change >= 5 && change <= 9
