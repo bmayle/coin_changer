@@ -42,4 +42,8 @@ class TestCoinChanger < Minitest::Test
 	assert_equal({"dollar" => 1}, change_maker(100))
 	end
 
+	def test_assert_that_194_cents_equals_1_dollar_3_quarters_1_dime_1_nickel_and_4_pennies
+	assert_equal({"dollar" => 1, "quarter" => 3, "dime" => 1, "nickel" => 1, "penny" => 4}, change_maker(194))
+	end
+
 end	
