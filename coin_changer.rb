@@ -1,6 +1,11 @@
 def change_maker(change)
 	change_hash = {}
 
+	if change >= 25 && change <= 99
+		change_hash["quarter"] = change / 25
+		change = change % 25
+	end 
+
 	if change >= 10 && change <= 24
 		change_hash["dime"] = change / 10
 		change = change % 10
