@@ -4,4 +4,5 @@ def change_maker(change)
 	if change >= 1
 		change_hash ["penny"] = change
 	end
+	change_hash
 end
