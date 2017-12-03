@@ -34,4 +34,8 @@ class TestCoinChanger < Minitest::Test
 	assert_equal({"quarter" => 1}, change_maker(25))
 	end
 
+	def test_assert_that_43_cents_equals_1_quarter_1_dime_1_nickel_and_3_pennies
+	assert_equal({"quarter" => 1, "dime" => 1, "nickel" => 1, "penny" => 3}, change_maker(43))
+	end
+
 end	
